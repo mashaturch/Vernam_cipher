@@ -89,7 +89,6 @@ def main ():
             if question_3.lower() == 'yes':
                 keys = input ('Enter encryption keys: ')
                 decryption_input(text, keys)
-
             else:
                 print ('There is nothing we can do, please answer the question again!')
                 main ()
