@@ -43,14 +43,7 @@ def encryption (text):
 
 def list_keys (keys):
     """Creating a list with keys"""
-    list = []
-    key = ''
-    for i in range (len (keys)):
-        if keys[i] == ' ':
-            list.append (key)
-            key = ''
-        else:
-            key += keys[i]
+    list = keys.split ()
     return list
 
 def decryption (text_encryption_out, keys_out, save):
